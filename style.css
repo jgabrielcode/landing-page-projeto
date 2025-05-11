@@ -3,10 +3,9 @@
     src: url(assets/helvetica-neue-5/HelveticaNeueLight.otf) format('opentype');
 }
 *{margin:0px; padding: 0px; box-sizing: border-box; font-size: 62.5%; font-family: 'Neue';}
-
 body{
    background-image: linear-gradient(to right top, #bb17ff, #9325dc, #6e27b9, #4e2394, #331d70, #261a5c, #1a1548, #121034, #100e2a, #0e0b20, #080715, #030305);
-    
+
 }
 
 header{
@@ -30,9 +29,14 @@ nav>ul{
 }
 ul>li{
     list-style-type: none;
-    font-size: 2rem;
     margin: 2rem;
     margin-right: 4rem;
+}
+
+li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
 }
 
 header>#button{
@@ -57,7 +61,7 @@ main>img{
     height: 700px;
     width: 1000px;
     position: absolute;
-    transform: translate(90%);
+    transform: translate(85%);
 }
 main>.text-group{
     
