@@ -18,18 +18,27 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-    <div id="button">Sign up</div>
+    <div id="bt-menu">Sign up</div>
    </header>
    <main>
-    <img src="assets/icon.png" alt="Icone servidor">
-    <div class="text-group">
-        <h1>Performance and security: <br> Future-ready servers.</h1>
-        <p>Enhance your application with servers optimized for speed, stability and security.<br> Our technology ensures maximum performance for your operation.</p>
-    </div>
-    <div class="email-group">
-        <label for="iEmail"></label>
-        <input type="text" id="iEmail" placeholder="Enter Your Email"><input type="button" value="Get Started" id="bt">
-    </div>
+
+    <section class="container">
+        <div class="text-group">
+            <h1>Performance and security: <br> Future-ready servers.</h1>
+            <p>Enhance your application with servers optimized for speed, stability and security.<br> Our technology ensures maximum performance for your operation.</p>
+        </div>
+        <form>
+            <div class="email-group">
+                <label for="iEmail"></label>
+                <input type="email" id="iEmail" placeholder="Enter Your Email" autocomplete="off">
+                <input type="submit" value="Get Started" id="bt">
+            </div>
+        </form>
+         <p id="out"></p>
+    </section>
+    <section class="login">
+            
    </main>
+   <script src="js/main.js"></script>
 </body>
 </html>

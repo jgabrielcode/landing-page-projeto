@@ -2,108 +2,151 @@
     font-family:'Neue' ;
     src: url(assets/helvetica-neue-5/HelveticaNeueLight.otf) format('opentype');
 }
+:root{
+    --corback:#ffffff;
+    --cortexto:#000000;
+    --coricons:#035add;
+    --gradiente:linear-gradient(to right top, #bb17ff, #9325dc, #6e27b9, #4e2394, #331d70, #261a5c, #1a1548, #121034, #100e2a, #0e0b20, #080715, #030305);;
+}
 *{margin:0px; padding: 0px; box-sizing: border-box; font-size: 62.5%; font-family: 'Neue';}
-body{
-   background-image: linear-gradient(to right top, #bb17ff, #9325dc, #6e27b9, #4e2394, #331d70, #261a5c, #1a1548, #121034, #100e2a, #0e0b20, #080715, #030305);
 
+body{
+    background-color:var(--corback) ;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header{
-    background-color:rgba(232, 232, 235, 0);
+    background-color:var(--corback);
+    width: 100%;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 header>nav{
-    color: white;
-    padding: 10px;
+    background-color: var(--corback);
+    color:var(--cortexto) ;
     width: 500px;
+    padding: 15px;
     display: flex;
     justify-content: center;
-    
+    align-items: center;
 }
 
 nav>ul{
     display: flex;
+    gap: 8rem;
 }
 ul>li{
     list-style-type: none;
-    margin: 2rem;
-    margin-right: 4rem;
 }
 
 li>a{
     text-decoration: none;
-    color: white;
-    font-size: 2rem;
+    color: var(--cortexto);
+    font-size: 2.5rem;
 }
 
-header>#button{
-    background-color: white;
-    font-size: 1.6rem;
+header>#bt-menu{
+    background-color: var(--coricons);
+    color: var(--corback);
+    font-size: 2.5rem;
     text-align: center;
-    width: 100px;
+    width: 120px;
     position: absolute;
     right: 10px;
     margin: 10px;
     padding: 10px;
+    cursor: pointer;
 }
 
 main{
-    height: 91vh;
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
+    align-items: center;
 }
-main>img{
-    height: 700px;
-    width: 1000px;
-    position: absolute;
-    transform: translate(85%);
-}
-main>.text-group{
-    
-    background-color: rgba(0, 255, 255, 0);
-    font-size: 2rem;
-    margin-left: 40px;
-}
-main>.text-group>h1{
-    font-weight: bolder;
-    font-size: 6rem;
-    color: #eae3ed;
-}
-
-main>.text-group>p{
-    font-size: 2rem;
-    color: rgb(255, 255, 255);
-    margin-top: 20px;
-}
-
-main>.email-group{
-    margin: 30px 0px 0px 40px;
+.container{
     display: flex;
-    width: max-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
-main>.email-group>input{
-    color: white;
-    padding: 5px;
+.container>.icon{
+    height: 800px;
+    width: 800px;
+    position: absolute;
+    transform: translate(100%);
+}
+.container>.text-group{
+    
+    background-color: var(--corback);
     font-size: 2rem;
+}
+.container>.text-group>h1{
+    font-weight: bolder;
+    font-size: 8rem;
+    text-align: center;
+    color: var(--cortexto);
+}
+
+.container>.text-group>p{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--cortexto);
+    margin-top: 2rem;
+}
+.container>form{
+    margin-top: 2rem;
+}
+.container>form>.email-group{
+    display: flex;
+}
+
+.container>form>.email-group>input{
+    height: 5rem;
+    color: var(--cortexto);
+    padding: 5px;
+    font-size: 2.5rem;
     outline: none;
     border: none;
     
 }
 #iEmail{
-    background-color: #1e1b2c8d;
+    width: 400px;
     padding-left: 20px;
+    border: 2px solid var(--cortexto);
 }
 #bt{
-background-color: rgb(243, 243, 243);
+background-color: var(--coricons);
 padding: 10px 30px;
-color: #000;
+color: var(--corback); cursor: pointer;
 }
 
 
+#out{
+    font-size: 2.5rem;
+    text-align: center;
+    color: green;
+}
+
+
+.sumir{
+    display: none;
+}
+
+.login{
+    display: none;
+    border: 2px solid black;
+    height: 30rem;
+    width: 200px;
+}
 
