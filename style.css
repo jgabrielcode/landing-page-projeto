@@ -267,5 +267,10 @@ header>#bt-menu{
     width: 200px;
     
 }
+#out{
+    font-size: 1.6rem;
+    text-align: center;
+    color: green;
+}
 
 }
