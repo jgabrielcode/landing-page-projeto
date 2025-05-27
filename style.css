@@ -219,29 +219,9 @@ header>#bt-menu{
 
 @media (max-width:768px) {
     header{
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
     
-
-header>nav{
-    margin-right: 130px;  
-}
-
-nav>ul{
-    display: flex;
-    gap: 3.5rem;
-}
-
-
-li>a{
-    font-size: 1.6rem;
-}
-
-header>#bt-menu{
-    font-size: 1.6rem;
-    
-}
 
 .container>.text-group{
         display: flex;
