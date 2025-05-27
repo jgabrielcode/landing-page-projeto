@@ -16,5 +16,5 @@ frm.addEventListener("submit", (e)=>{
 
 btMenu.addEventListener("click", ()=>{
 container.className = "sumir"
-login.className = "exibir"
+login.style.display = "block"
 })
