@@ -21,4 +21,4 @@ Esse projeto faz parte do meu processo de aprendizado em front-end, com foco em 
 
 ## 🙋‍♂️ Autor
 
-- João Gabriel(https://github.com/jgabrielcode)
+- João Gabriel(https://jgabrielcode.github.io/landing-page-projeto/)
