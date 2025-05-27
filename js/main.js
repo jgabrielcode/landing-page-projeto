@@ -10,11 +10,9 @@ frm.addEventListener("submit", (e)=>{
     out.innerText = `Obrigado por se cadastrar! Fique de olho no seu e-mail e 
     prepare-se para elevar sua experiência digital!
 `
-    
-    
 })
 
 btMenu.addEventListener("click", ()=>{
 container.className = "sumir"
-login.style.display = "block"
+login.className = "exibir"
 })
