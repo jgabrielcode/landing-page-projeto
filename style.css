@@ -180,6 +180,11 @@ header>#bt-menu{
 }
 
 @media (max-width:768px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    
 
 header>nav{
     margin-right: 130px;  
@@ -207,13 +212,13 @@ header>#bt-menu{
 }
 
 .container>.text-group>h1{
-    font-size: 4rem;
+    font-size: 3rem;
    
     
 }
 
 .container>.text-group>p{
-    width: 450px;
+    width: 350px;
     font-size: 1.6rem;
 }
 .container>form>.email-group>input{
@@ -221,7 +226,7 @@ header>#bt-menu{
     font-size: 1.6rem; 
 }
 #iEmail{
-    width: 280px;
+    width: 200px;
     
 }
 
