@@ -150,3 +150,45 @@ color: var(--corback); cursor: pointer;
     width: 200px;
 }
 
+@media (max-width:768px) {
+    header{display: none;}
+    header>nav{display: none;}
+    .container>.text-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container>.text-group>h1{
+    font-weight: bolder;
+    font-size: 4rem;
+    text-align: center;
+    color: var(--cortexto);
+}
+
+.container>.text-group>p{
+    width: 450px;
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--cortexto);
+    margin-top: 2rem;
+}
+.container>form>.email-group>input{
+    height: 3.5rem;
+    color: var(--cortexto);
+    padding: 5px;
+    font-size: 1.6rem;
+    outline: none;
+    border: none;
+    
+}
+#iEmail{
+    width: 280px;
+    padding-left: 20px;
+    border: 2px solid var(--cortexto);
+}
+#out{
+    font-size: 1.6rem;
+    text-align: center;
+    color: green;
+}
+}
