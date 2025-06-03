@@ -3,13 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Lanchonete</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">CARDAPIO</a></li>
+                <li><a href="#">NOSSAS LOJAS</a></li>
+                <li><a href="#"> CONTATOS</a></li>
+            </ul>
+        </nav>
+        <div class="nav_i">
+            <i class="bi bi-geo-alt"></i>
+            <i class="bi bi-cart"></i>
+            
+        </div>
+    </header>
     <main>
+        <section class="home_group">
+            <div class="home_text">
+                <p>AQUI VOCE ENCOTRAS OS MAIS SABOROSOS LANCHES.</p> 
+                <p>OFERTA ESPECIAL DE 2 PIZZAS TRADICIONAIS COM <span>30% DE DESCONTO</span></p> 
+                <div id="bt_compra">COMPRE AGORA</div>
+            </div>
+            <img src="assets/icon.png" alt="">
+        </section>
         <section class="box_map">
-                <img src="assets/map-pin.svg" alt="Icon de mapa" id="map_img">
+                <i class="bi bi-geo-alt-fill"></i>
                 <input type="text" id="inEndereco" placeholder="Endereco de entrega">
         </section>
 
@@ -26,11 +50,23 @@
         </section>
         <!-- Aba de menu -->
         <section class="box_menu">
-            <div class="card_img">
-                <img src="assets/pexels-melaudelo-28114890-removebg-preview.png" alt="">
-                <img src="assets/pexels-natan-machado-fotografia-gastronomica-162809799-15010296-removebg-preview.png" alt="">
-                <img src="assets/—Pngtree—delicious and testy cheese burger_16763714.png" alt="">
-                <img src="assets/icon.png" alt="">
+            <div class="box_img">
+                <div class="card_img">
+                    <img src="assets/pexels-melaudelo-28114890-removebg-preview.png" alt="">
+                    <p>BIG-BURGUES</p>
+                </div>
+                <div class="card_img">
+                    <img src="assets/pexels-natan-machado-fotografia-gastronomica-162809799-15010296-removebg-preview.png" alt="">
+                    <p>X-EGG</p>
+                </div>
+                <div class="card_img">
+                    <img src="assets/—Pngtree—delicious and testy cheese burger_16763714.png" alt="">
+                    <p>X-SALADAS</p>
+                </div>
+                <div class="card_img">
+                    <img src="assets/icon.png" alt="">
+                    <p>PIZZAS</p>
+                </div>
             </div>
         </section>
 
@@ -45,7 +81,7 @@
                         <p>R$55,00</p>
                     </div>
                     <div id="icon_plus">
-                        <img src="assets/plus-solid.svg" alt="">
+                        <i class="bi bi-plus"></i>
                     </div>
                 </div>
                 <div class="card_prod">
@@ -55,17 +91,17 @@
                         <p>R$56,90</p>
                     </div>
                     <div id="icon_plus">
-                        <img src="assets/plus-solid.svg" alt="">
+                        <i class="bi bi-plus"></i>
                     </div>
                 </div>
                 <div class="card_prod">
                     <img src="assets/—Pngtree—delicious and testy cheese burger_16763714.png" alt="">
                     <div class="text_prod">
-                        <p>X-Salada</p>
+                        <p>X-SALADA</p>
                         <p>R$29,90</p>
                     </div>
                     <div id="icon_plus">
-                        <img src="assets/plus-solid.svg" alt="">
+                        <i class="bi bi-plus"></i>
                     </div>
                 </div>
                 <div class="card_prod">
@@ -75,17 +111,18 @@
                         <p>R$29,90</p>
                     </div>
                     <div id="icon_plus">
-                        <img src="assets/plus-solid.svg" alt="">
+                        <i class="bi bi-plus"></i>
                     </div>
                 </div>
 
         </section>
 
         <section class="nav_bar">
-            <img src="assets/house.svg" alt="">
-            <img src="assets/shopping-cart.svg" alt="">
-            <img src="assets/map-pin.svg" alt="">
-            <img src="assets/user.svg" alt="">
+            <div id="point"></div>
+            <i class="bi bi-house"></i>  
+            <i class="bi bi-cart"></i>
+            <i class="bi bi-geo-alt"></i>
+            <i class="bi bi-person"></i>
         </section>
     </main>
     
