@@ -2,6 +2,10 @@
     font-family:'Neue' ;
     src: url(assets/helvetica-neue-5/HelveticaNeueLight.otf) format('opentype');
 }
+@font-face {
+    font-family:'turnpike' ;
+    src: url(assets/turnpike/Turnpike.ttf) format('truetype');
+}
 :root{
     --corback:#ffffff;
     --cortexto:#000000;
@@ -80,11 +84,15 @@ main>.box_oferta{
 }
 .box_oferta>.texto_oferta{
     margin-top: 20px;
-color: #ffffff;
+    color: #ffffff;
 
 }
+.texto_oferta>p{
+    font-family:'turnpike' ;
+}
 .texto_oferta>p>span{
-    color: rgb(255, 0, 0);
+    font-family:'turnpike' ;
+    color: rgb(250, 3, 3);
 }
 
 .texto_oferta{
