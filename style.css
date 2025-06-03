@@ -10,7 +10,7 @@
     --corback:#ffffff;
     --cortexto:#000000;
     --coricons:#035add;
-    --gradiente: linear-gradient(90deg, #fd5236,#ff8000);
+    --gradiente: linear-gradient(90deg ,#ff8000, #fd5236);
                                                                                                                 
 }
 
@@ -93,7 +93,7 @@ main>.box_oferta{
 }
 .texto_oferta>p>span{
     font-family:'turnpike' ;
-    color: rgb(250, 192, 3);
+    color: rgb(250, 3, 3);
 }
 
 .texto_oferta{
