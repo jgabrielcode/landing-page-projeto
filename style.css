@@ -78,17 +78,17 @@ main>.box_oferta{
     background-color: red;
     color: white;
     font-size: 5rem;
-    height: 5rem;
+    height: 4rem;
     width: 10rem;
     position: absolute;
-    transform: translate(-20px,-95px);
+    transform: translate(-20px,-86px);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 20px 0px 4rem 0px;
 }
 .box_oferta>.texto_oferta{
-    margin-top: 20px;
+    margin-top: 25px;
     color: #ffffff;
 
 }
