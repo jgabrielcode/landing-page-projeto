@@ -81,7 +81,7 @@ main>.box_oferta{
     height: 4rem;
     width: 10rem;
     position: absolute;
-    transform: translate(-20px,-86px);
+    transform: translate(-20px,-80px);
     display: flex;
     align-items: center;
     justify-content: center;
