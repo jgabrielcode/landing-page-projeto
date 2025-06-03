@@ -6,203 +6,180 @@
     --corback:#ffffff;
     --cortexto:#000000;
     --coricons:#035add;
-    --gradiente:linear-gradient(to right top, #bb17ff, #9325dc, #6e27b9, #4e2394, #331d70, #261a5c, #1a1548, #121034, #100e2a, #0e0b20, #080715, #030305);;
-}
-*{margin:0px; padding: 0px; box-sizing: border-box; font-size: 62.5%; font-family: 'Neue';}
-
-body{
-    background-color:var(--corback) ;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    --gradiente: linear-gradient(90deg, #fd5236,#ff8000);
+                                                                                                                
 }
 
-header{
-    background-color:var(--corback);
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Neue', Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
 }
-header>nav{
-    background-color: var(--corback);
-    color:var(--cortexto) ;
-    width: 500px;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+img{
+    width: 200px;
+    height: 200px;
 }
 
-nav>ul{
-    display: flex;
-    gap: 8rem;
-}
-ul>li{
-    list-style-type: none;
-}
-
-li>a{
-    text-decoration: none;
-    color: var(--cortexto);
-    font-size: 2.5rem;
-}
-
-header>#bt-menu{
-    background-color: var(--coricons);
-    color: var(--corback);
-    font-size: 2.5rem;
-    text-align: center;
-    width: 120px;
-    position: absolute;
-    right: 10px;
-    margin: 10px;
-    padding: 10px;
-    cursor: pointer;
-}
-
+body{ width: 100%; height: 100vh; }
 main{
-    width: 100%;
-    height: 100vh;
+    background-color: var(--corback);
+    padding: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 4rem;
 }
-.container{
+main>.box_map{
+    font-size: 3rem;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+.box_map>img{
+    height:5rem;
+    width: 5rem;
+}
+.box_map>input{
+    background-color: #e6e6e6;
+    width: 300px;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 5px;
+}
+
+main>.box_oferta{
+    background: var(--gradiente);
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+
+}
+#card_oferta{
+    background-color: red;
+    color: white;
+    font-size: 5rem;
+    height: 5rem;
+    width: 10rem;
+    position: absolute;
+    transform: translate(-20px,-95px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 0px 4rem 0px;
+}
+.box_oferta>.texto_oferta{
+    margin-top: 20px;
+color: #ffffff;
+
+}
+.texto_oferta>p>span{
+    color: rgb(255, 0, 0);
+}
+
+.texto_oferta{
+    font-size: 4rem;
+    font-weight: bold;
+}
+main>.box_menu{
+    width: 100%;
+}
+.card_img{
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
-
-.container>.icon{
-    height: 800px;
-    width: 800px;
-    position: absolute;
-    transform: translate(100%);
+.box_menu>.card_img>img{
+    background-color: #e4e4e4;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    padding: 10px;
+    
 }
-.container>.text-group{
-  
+
+main>.box_prod{
+    display: grid;
+    grid-template-columns: 130px 130px;
+    gap: 30px;
+    position: relative;
+}
+.box_prod>.card_prod{
+    background-color: #e4e4e4;
+    height:20rem ;
+    width: 15rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--corback);
-    font-size: 2rem;
+    border-radius: 1rem;
+    
 }
-.container>.text-group>h1{
-    font-weight: bolder;
-    font-size: 8rem;
-    text-align: center;
-    color: var(--cortexto);
+.card_prod>img{
+    height: 10rem;
+    width: 10rem;
 }
-
-.container>.text-group>p{
-    text-align: center;
-    font-size: 2.5rem;
-    color: var(--cortexto);
-    margin-top: 2rem;
-}
-.container>form{
-    margin-top: 2rem;
-}
-.container>form>.email-group{
+.card_prod>.text_prod{
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 2rem;
     display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 
-.container>form>.email-group>input{
+.text_prod>p{
+    font-size: 1.4rem;
+}
+#icon_plus{
+background-color: #ff8000;
+height: 30px;
+width: 30px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+position: absolute;
+transform: translate(50px,160px);
+}
+
+#icon_plus>img{
+    height: 15px;
+    width: 15px;
+}
+
+#icon_plus:hover{
+    cursor: pointer;
+}
+
+main>.nav_bar{
+    background-color: #e4e4e4;
     height: 5rem;
-    color: var(--cortexto);
-    padding: 5px;
-    font-size: 2.5rem;
-    outline: none;
-    border: none;
-    
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    border-radius: 5rem;
 }
-#iEmail{
-    width: 400px;
-    padding-left: 20px;
-    border: 2px solid var(--cortexto);
-}
-#bt{
-background-color: var(--coricons);
-padding: 10px 30px;
-color: var(--corback); cursor: pointer;
+.nav_bar>img{
+height: 3rem;
+width:3rem ;
 }
 
-
-#out{
-    font-size: 2.5rem;
-    text-align: center;
-    color: green;
-}
-
-@media (max-width:1024px){
-    header>nav{
-    margin-right: 100px; 
- }
- li>a{
-    font-size: 2rem;
-}
-.container>.text-group>h1{
-  
-    font-size: 7rem;
-}
-.container>.text-group{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+ @media (min-width:1500px) {
+    body{
+        background-color: red;
     }
-
-.container>.text-group>p{
-    font-size: 2rem;   
-}
-
-header>#bt-menu{
-    
-    font-size: 2rem;
-    
-}
-}
-
-@media (max-width:768px) {
-    header{
-        display: none;
-    }
-    
-
-.container>.text-group{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-}
-
-.container>.text-group>h1{
-    font-size: 3rem;
-   
-    
-}
-
-.container>.text-group>p{
-    width: 350px;
-    font-size: 1.6rem;
-}
-.container>form>.email-group>input{
-    height: 3.5rem;
-    font-size: 1.6rem; 
-}
-#iEmail{
-    width: 200px;
-    
-}
-#out{
-    font-size: 1.6rem;
-    text-align: center;
-    color: green;
-}
-
-}
+} 

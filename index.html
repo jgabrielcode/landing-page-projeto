@@ -3,41 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css" media="all">
-    <!--TODO: Adicionar media query para telas menores-->=
-    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Lanchonete</title>
 </head>
 <body>
-   <header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Plans</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <div id="bt-menu">Sign up</div>
-   </header>
-   <main>
+    <main>
+        <section class="box_map">
+                <img src="assets/map-pin.svg" alt="Icon de mapa" id="map_img">
+                <input type="text" id="inEndereco" placeholder="Endereco de entrega">
+        </section>
 
-    <section class="container">
-        <div class="text-group">
-            <h1>Performance and security: <br> Future-ready servers.</h1>
-            <p>Enhance your application with servers optimized for speed, stability and security.<br> Our technology ensures maximum performance for your operation.</p>
-            <p>Leave your email to start the process of raising the level of your company.</p>
-        </div>
-        <form>
-            <div class="email-group">
-                <label for="iEmail"></label>
-                <input type="email" id="iEmail" placeholder="Enter Your Email" autocomplete="on" required>
-                <input type="submit" value="Get Started" id="bt">
+        <!-- card de ofertas -->
+        <section class="box_oferta">
+            <div id="card_oferta">
+                    <p>30%</p>
+                </div> 
+                <div class="texto_oferta">
+                    <p>OFERTA ESPECIAL NA COMPRA DE <br> <span>2 PIZZAS TRADICIONAIS</span></p>
+                </div>
+
+            <img src="assets/icon.png" alt="">
+        </section>
+        <!-- Aba de menu -->
+        <section class="box_menu">
+            <div class="card_img">
+                <img src="assets/pexels-melaudelo-28114890-removebg-preview.png" alt="">
+                <img src="assets/pexels-natan-machado-fotografia-gastronomica-162809799-15010296-removebg-preview.png" alt="">
+                <img src="assets/—Pngtree—delicious and testy cheese burger_16763714.png" alt="">
+                <img src="assets/icon.png" alt="">
             </div>
-        </form>
-         <p id="out"></p>
-    </section>
-   </main>
-   <script src="js/main.js"></script>
+        </section>
+
+        <!-- Cards Produtos -->
+
+        <section class="box_prod">
+            
+                <div class="card_prod">
+                    <img src="assets/pexels-melaudelo-28114890-removebg-preview.png" alt="">
+                    <div class="text_prod">
+                        <p>BIG-BURGUER</p>
+                        <p>R$55,00</p>
+                    </div>
+                    <div id="icon_plus">
+                        <img src="assets/plus-solid.svg" alt="">
+                    </div>
+                </div>
+                <div class="card_prod">
+                    <img src="assets/icon.png" alt="">
+                    <div class="text_prod">
+                        <p>PIZZA TRADICIONAL</p>
+                        <p>R$56,90</p>
+                    </div>
+                    <div id="icon_plus">
+                        <img src="assets/plus-solid.svg" alt="">
+                    </div>
+                </div>
+                <div class="card_prod">
+                    <img src="assets/—Pngtree—delicious and testy cheese burger_16763714.png" alt="">
+                    <div class="text_prod">
+                        <p>X-Salada</p>
+                        <p>R$29,90</p>
+                    </div>
+                    <div id="icon_plus">
+                        <img src="assets/plus-solid.svg" alt="">
+                    </div>
+                </div>
+                <div class="card_prod">
+                    <img src="assets/pexels-natan-machado-fotografia-gastronomica-162809799-15010296-removebg-preview.png" alt="">
+                    <div class="text_prod">
+                        <p>X-EGG</p>
+                        <p>R$29,90</p>
+                    </div>
+                    <div id="icon_plus">
+                        <img src="assets/plus-solid.svg" alt="">
+                    </div>
+                </div>
+
+        </section>
+
+        <section class="nav_bar">
+            <img src="assets/house.svg" alt="">
+            <img src="assets/shopping-cart.svg" alt="">
+            <img src="assets/map-pin.svg" alt="">
+            <img src="assets/user.svg" alt="">
+        </section>
+    </main>
+    
 </body>
 </html>
