@@ -119,7 +119,7 @@ main>.box_menu{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
     gap: 2rem;
 }
 .box_img>.card_img>img{
